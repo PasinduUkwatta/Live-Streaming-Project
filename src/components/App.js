@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter,Route,Link} from 'react-router-dom'
+import {MemoryRouter,Route,Link} from 'react-router-dom'
 
 const PageOne =() =>{
     return (
@@ -25,13 +25,13 @@ const PageTwo =() =>{
 const App =()=>{
     return (
         <div>
-            <BrowserRouter>
+            <MemoryRouter>
                 <div>
                     <Route path ="/" exact component ={PageOne}/>
                     <Route path ="/pagetwo"  component ={PageTwo}/>
                 </div>
 
-            </BrowserRouter>
+            </MemoryRouter>
 
         </div>
     )
